@@ -1,32 +1,32 @@
 {
-  "name": "minimalapp_backend",
-  "version": "1.0.0",
-  "description": "Minimalist App",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/raulrod16124/minimalApp_backend.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/raulrod16124/minimalApp_backend/issues"
-  },
-  "homepage": "https://github.com/raulrod16124/minimalApp_backend#readme",
-  "dependencies": {
-    "bcrypt": "^5.0.1",
-    "cors": "^2.8.5",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "fs": "^0.0.1-security",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.12.11",
-    "mongoose-beautiful-unique-validation": "^7.1.1",
-    "nodemailer": "^6.6.1",
-    "nodemailer-express-handlebars": "^4.0.0",
-    "nodemon": "^2.0.7"
-  }
+	"name": "minimalapp_backend",
+	"version": "1.0.0",
+	"description": "Minimalist App",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/raulrod16124/minimalApp_backend.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/raulrod16124/minimalApp_backend/issues"
+	},
+	"homepage": "https://github.com/raulrod16124/minimalApp_backend#readme",
+	"dependencies": {
+		"bcrypt": "^5.0.1",
+		"cors": "^2.8.5",
+		"dotenv": "^10.0.0",
+		"express": "^4.17.1",
+		"fs": "^0.0.1-security",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.12.11",
+		"mongoose-beautiful-unique-validation": "^7.1.1",
+		"nodemailer": "^6.6.1",
+		"nodemailer-express-handlebars": "^4.0.0",
+		"nodemon": "^2.0.7"
+	}
 }
