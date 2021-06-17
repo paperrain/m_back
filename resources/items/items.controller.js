@@ -81,13 +81,14 @@ function addItem(req, res) {
 
 function updateAllItems(req, res) {
 	let userToUpdate = req.currentUser;
-	dateToCheck = req.body.date; 
-	itemsToUpdate = req.body.items
+	dateToCheck = req.body.date;
+	console.log("fecha a introducir", dateToCheck); 
+	itemsToUpdate = req.body.items;
 
 
 	if ((dateToCheck) && (itemsToUpdate.length != 0)){ // corroborar que el valor de entrada es un fecha
 		dateString = dateToCheck.split("-");
-		let date = new Date((+dateString[0]), (+dateString[1])-1, (+dateString[2].substr(0,2))+1);
+		let date = new Date((+dateString[0]), (+dateString[1])-1, (+dateString[2].substr(0,2)), 12);
 		console.log("pasado a date: ", date);	
 		itemModel
 			.updateMany({ _id: {$in: itemsToUpdate},  

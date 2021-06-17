@@ -1,10 +1,9 @@
 // Access to the data base .env
-require("dotenv").config();
+require('dotenv').config();
 
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
-const port = 3000;
 
 // DB connect
 // mongoose.connect('mongodb://localhost/users');
@@ -41,6 +40,6 @@ server.use("/category", categoryRouter);
 server.use("/", userRouter);
 
 // Call Server
-server.listen(process.env.PORT || port, () => {
-	console.log(`escuchando el puerto ${port} dentro de docker`);
-});
+server.listen( 3000, () => {
+	console.log("escuchando el puerto 3000 dentro de docker");
+})
